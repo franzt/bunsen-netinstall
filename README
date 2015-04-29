@@ -50,7 +50,6 @@ greeting: message to user
 pkgs-recs: packages to install with recommends
 pkgs-norecs: packages to install without recommends
 extra_repos: repository(ies) to add to /etc/apt/sources.list
-sysfiles1: system files to copy in before installing packages (mainly apt-related)
 sysfiles2: system files to copy in after installing packages
 preinstall_commands: commands to run before installing packages and files
 postinstall_commands: commands to run after installing packages and files
