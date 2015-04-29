@@ -367,7 +367,7 @@ if [[ -s extra_repos ]]; then
         cat extra_repos 2> >( tee -a "$logfile" ) >> /etc/apt/sources.list.d/90bunsen || giveup "There was a problem appending extra_repos to sources.list." 1
     fi
 elif [[ -r gen_sources ]]; then
-    if [[ -s  /etc/apt/sources.list.d/90bunsen]]; then
+    if [[ -s  /etc/apt/sources.list.d/90bunsen ]]; then
         msg " /etc/apt/sources.list.d/90bunsen already generated"
     else
         msg "generating new sources.list"
@@ -375,7 +375,7 @@ elif [[ -r gen_sources ]]; then
     fi
 fi
 
-[[ -s  /etc/apt/sources.list.d/90bunsen ]] || giveup "There is no  /sources.list.d/90bunsen file." 1
+#[[ -s  /etc/apt/sources.list.d/90bunsen ]] || giveup "There is no  /sources.list.d/90bunsen file." 1
 
 msg "installing apt configuration files"
 
